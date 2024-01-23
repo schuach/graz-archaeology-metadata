@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://www.m-box.at/schema/archive">
+  <archive name="Graz Museum" id="GrazMuseum5">
+    <item id="ef9c7736-078b-4fe1-a17c-d9f257b6b489" templ="Kunstdatenbank NEU">
+      <link rel="item-detail" href="https://apps.m-box.at/panoptikum/archives/GrazMuseum5/mitems/ef9c7736-078b-4fe1-a17c-d9f257b6b489" />
+      <field name="Institution">
+        <text lang="de">Stadtmuseum Graz GmbH</text>
+      </field>
+      <field name="Sammlungsgebiet">
+        <text lang="de">Archäologie</text>
+      </field>
+      <field name="Inventarnummer">
+        <text lang="de">STA-00395</text>
+      </field>
+      <field name="Nummernhistorie">
+        <text lang="de">Fnd. Nr.:16</text>
+      </field>
+      <field name="Objektkurzbezeichnung">
+        <text lang="de">Büste ohne Kopf</text>
+      </field>
+      <field name="Titel">
+        <text lang="de">Büste ohne Kopf</text>
+      </field>
+      <field name="Kurzbeschreibung">
+        <text lang="de">Büste ohne Kopf</text>
+      </field>
+      <field name="Objektbeschreibung">
+        <text lang="de">Büste ohne Kopf; mit Hohlraum innen, um einen Kopf anzustecken; Vorderseite vollständig herausgearbeitet, Gewandfalten sind erkennbar; eingedrückte Nähspuren an den Schultern und Dekolleté; Rückseite unbearbeitet; lineare Einritzung vertikal verlaufend an der Rückseite links; um den Hals abgebrochen; Versinterungsspuren; Inschrift auf der Rückseite, Lesung fraglich (Pégnon=?)</text>
+      </field>
+      <field name="Stück">
+        <text lang="de">1</text>
+      </field>
+      <field name="Datierung">
+        <text lang="de">19. - 20. Jahrhundert</text>
+      </field>
+      <field name="IDs Bildorte">
+        <text lang="" />
+      </field>
+      <field name="IDs Standort">
+        <text lang="" />
+      </field>
+      <field name="Objektstandort Gebäude/Raum">
+        <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
+      </field>
+      <field name="Objektstandort Aufstellungseinheit">
+        <text lang="de">R47</text>
+      </field>
+      <field name="Objektstandort Verpackungseinheit">
+        <text lang="de">Kiste T19</text>
+      </field>
+      <field name="Kategorie">
+        <text lang="de">Original</text>
+      </field>
+      <field name="Herstellung/Verwendungszweck">
+        <text lang="" />
+      </field>
+      <field name="Hersteller/Künstler*in Name">
+        <text lang="" />
+      </field>
+      <field name="Hersteller/Künstler*in Rolle">
+        <text lang="" />
+      </field>
+      <field name="Schlagworte">
+        <text lang="de">Büste; Keramik; Inschrift</text>
+      </field>
+      <field name="Registrierdatum">
+        <text lang="de">05.01.2023</text>
+      </field>
+      <field name="Bearbeitet von">
+        <text lang="de">Lamm, Mag. Dr. Susanne; Zelenka BA BA, Anna</text>
+      </field>
+      <field name="Eigentümer*in">
+        <text lang="de">Stadtmuseum Graz GmbH</text>
+      </field>
+      <field name="Eingangsart">
+        <text lang="de">Schenkung</text>
+      </field>
+      <field name="Voreigentümer*in Name">
+        <text lang="de">Energie Steiermark Green Power GmbH</text>
+      </field>
+      <field name="Voreigentümer*in Ort">
+        <text lang="de">Leonhardgürtel 10, 8010 Graz</text>
+      </field>
+      <field name="Voreigentümer*in Rolle">
+        <text lang="de">Auftraggeber</text>
+      </field>
+      <field name="erworben von">
+        <text lang="" />
+      </field>
+      <field name="Eingangsdatum">
+        <text lang="de">10.06.2021</text>
+      </field>
+      <field name="Identifizierungsgrad">
+        <text lang="de">Eindeutig</text>
+      </field>
+      <field name="Provenienzbewertung">
+        <text lang="de">unbedenklich</text>
+      </field>
+      <field name="Provenienzbewertung Begründung">
+        <text lang="de">Aufgrund der Herkunft (archäologische Grabung) wurde die Provenienz als unbedenklich eingestuft. Nachdem die Grabungen im Bereich des ehemaligen NS-Zwangsarbeiterlagers Graz-Liebenau stattfanden, liegt jedoch hinsichtlich der (den) Objektbiographie(n) ein historischer Unrechtskontext vor.</text>
+      </field>
+      <field name="Wert">
+        <text lang="" />
+      </field>
+      <field name="Bemerkungen">
+        <text lang="" />
+      </field>
+      <field name="Copyright">
+        <text lang="" />
+      </field>
+      <field name="Status">
+        <text lang="de">inventarisiert</text>
+      </field>
+      <field name="Literatur">
+        <text lang="" />
+      </field>
+      <field name="Weiterführenden Quellen/Archivalien">
+        <text lang="" />
+      </field>
+      <field name="Objektbiografie">
+        <text lang="" />
+      </field>
+      <field name="Bez., Signaturen, Punzen, Marken">
+        <text lang="de">Inschrift; Lesung fraglich (Pégnon?)</text>
+      </field>
+      <field name="Technik">
+        <text lang="de">gebrannt</text>
+      </field>
+      <field name="Material">
+        <text lang="de">Keramik</text>
+      </field>
+      <field name="Rückseite">
+        <text lang="" />
+      </field>
+      <field name="Maße">
+        <text lang="de">9x6,3x7,8 cm</text>
+      </field>
+      <field name="Objektzustand Allgemein">
+        <text lang="de">gut</text>
+      </field>
+      <field name="Arthandling möglich">
+        <text lang="">true</text>
+      </field>
+      <field name="Ausstellungsfähig">
+        <text lang="">true</text>
+      </field>
+      <field name="Restauratorische Maßnahmen">
+        <text lang="" />
+      </field>
+      <field name="Schäden">
+        <text lang="" />
+      </field>
+      <field name="Konservatorische Bemerkungen">
+        <text lang="" />
+      </field>
+      <field name="Maßnahmennummer">
+        <text lang="de">63113.17.01</text>
+      </field>
+      <field name="Maßnahmenbezeichnung">
+        <text lang="de">Hilfsdrainage</text>
+      </field>
+      <field name="Politischer Bezirk">
+        <text lang="de">Graz</text>
+      </field>
+      <field name="Gemeinde">
+        <text lang="de">Graz</text>
+      </field>
+      <field name="Katastralgemeinde">
+        <text lang="de">Jakomini</text>
+      </field>
+      <field name="Adresse">
+        <text lang="de">-</text>
+      </field>
+      <field name="Grundstücksnummer">
+        <text lang="de">2155/2</text>
+      </field>
+      <field name="Flächen-/Schnittnummer">
+        <text lang="de">1</text>
+      </field>
+      <field name="Grabungsobjektnummer">
+        <text lang="de">2</text>
+      </field>
+      <field name="Grabungsobjektbezeichnung">
+        <text lang="de">-</text>
+      </field>
+      <field name="SE-Nummer">
+        <text lang="de">13</text>
+      </field>
+      <field name="SE-Bezeichnung">
+        <text lang="de">-</text>
+      </field>
+      <field name="Kistennummer">
+        <text lang="de">-</text>
+      </field>
+      <field name="Koordinaten GK M34">
+        <text lang="de">-</text>
+      </field>
+      <medium id="b1c5e4f6-9c45-47b1-b436-9f24b9d012c1">
+        <caption>
+          <text lang="de">[STA-00395] - Büste ohne Kopf</text>
+        </caption>
+        <link rel="HiResOnline" incl="" type="IMAGE_STD" href="https://apps.m-box.at/panoptikum/archives/GrazMuseum5/mitems/ef9c7736-078b-4fe1-a17c-d9f257b6b489/media/b1c5e4f6-9c45-47b1-b436-9f24b9d012c1/content" title="[STA-00395] - Büste ohne Kopf" />
+        <link rel="Miniatur" incl="" type="IMAGE_STD" href="_STA-00395_ - Büste ohne Kopf_000001.JPG" title="[STA-00395] - Büste ohne Kopf" />
+      </medium>
+    </item>
+  </archive>
+</root>
