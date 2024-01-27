@@ -25,10 +25,10 @@ return "| " || $field || " | |"
 | Bemerkungen                         | none                                                                                         | always empty                         | Y     |
 | Bez., Signaturen, Punzen, Marken    | =objectDescriptionSet=                                                                       |                                      | Y     |
 | Copyright                           | none                                                                                         | always empty                         | Y     |
-| Datierung                           |                                                                                              | human readable dates                 |       |
+| Datierung                           | production event, =displayDate=                                                              | human readable dates                 | Y     |
 | Eigentümer*in                       |                                                                                              |                                      |       |
-| Eingangsart                         |                                                                                              |                                      |       |
-| Eingangsdatum                       |                                                                                              |                                      |       |
+| Eingangsart                         | acquisition event, =descriptiveNoteValue=                                                    |                                      | Y     |
+| Eingangsdatum                       | acquisition event, =descriptiveNoteValue=                                                    |                                      | Y     |
 | erworben von                        | none                                                                                         | always empty                         | Y     |
 | Flächen-/Schnittnummer              |                                                                                              |                                      |       |
 | Gemeinde                            |                                                                                              |                                      |       |
@@ -58,9 +58,9 @@ return "| " || $field || " | |"
 | Objektbeschreibung                  | =objectDescriptionSet=                                                                       |                                      | Y     |
 | Objektbiografie                     | =objectDescriptionSet=                                                                       |                                      | Y     |
 | Objektkurzbezeichnung               |                                                                                              |                                      |       |
-| Objektstandort Aufstellungseinheit  |                                                                                              |                                      |       |
-| Objektstandort Gebäude/Raum         |                                                                                              |                                      |       |
-| Objektstandort Verpackungseinheit   |                                                                                              |                                      |       |
+| Objektstandort Aufstellungseinheit  | =repositorySet=                                                                              |                                      | Y     |
+| Objektstandort Gebäude/Raum         | =repositorySet=                                                                              |                                      | Y     |
+| Objektstandort Verpackungseinheit   | =repositorySet=                                                                              |                                      | Y     |
 | Objektzustand Allgemein             | =objectDescriptionSet=                                                                       |                                      | Y     |
 | Politischer Bezirk                  |                                                                                              |                                      |       |
 | Provenienzbewertung                 | =objectDescriptionSet=                                                                       |                                      | Y     |
@@ -73,13 +73,13 @@ return "| " || $field || " | |"
 | Sammlungsgebiet                     |                                                                                              |                                      |       |
 | Schlagworte                         | =objectWorkTypeWrap/objectWorkType= for each term separated by =/; */=                       |                                      | Y     |
 | Schäden                             | =objectDescriptionSet=                                                                       |                                      | Y     |
-| Status                              |                                                                                              | always "inventarisiert"              |       |
+| Status                              | acquisition event, =descriptiveNoteValue=                                                    | always "inventarisiert"              | Y     |
 | Stück                               |                                                                                              |                                      |       |
 | Technik                             | =displayMaterialsTech=; =termMaterialsTech[@"http://terminology.lido-schema.org/lido00131"]= |                                      | Y     |
 | Titel                               | =titleSet/appelationValue=                                                                   |                                      | Y     |
-| Voreigentümer*in Name               |                                                                                              |                                      |       |
-| Voreigentümer*in Ort                |                                                                                              |                                      |       |
-| Voreigentümer*in Rolle              |                                                                                              |                                      |       |
+| Voreigentümer*in Name               | acquisition event, =descriptiveNoteValue=                                                    |                                      | Y     |
+| Voreigentümer*in Ort                | acquisition event, =descriptiveNoteValue=                                                    |                                      | Y     |
+| Voreigentümer*in Rolle              | acquisition event, =descriptiveNoteValue=                                                    |                                      | Y     |
 | Weiterführenden Quellen/Archivalien | none                                                                                         | always empty                         | Y     |
 | Wert                                | none                                                                                         | always empty                         | Y     |
 #+TBLFM: $2=objectWorkTypeWrap/objectWorkType= for each
@@ -87,54 +87,24 @@ return "| " || $field || " | |"
 
 #+begin_src xquery :db grazArchaeology
 declare default element namespace "http://www.m-box.at/schema/archive";
-//field[starts-with(@name, "Objektstandort")]
+//field[starts-with(@name, "Status")]
 #+end_src
 
 #+RESULTS:
 #+begin_example
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
-  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Status">
+  <text lang="de">inventarisiert</text>
 </field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
-  <text lang="de">R47</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Status">
+  <text lang="de">inventarisiert</text>
 </field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
-  <text lang="de">Kiste T19</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Status">
+  <text lang="de">inventarisiert</text>
 </field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
-  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Status">
+  <text lang="de">inventarisiert</text>
 </field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
-  <text lang="de">R47</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
-  <text lang="de">Kiste T16</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
-  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
-  <text lang="de">R47</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
-  <text lang="de">Kiste T4</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
-  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
-  <text lang="de">R47</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
-  <text lang="de">Kiste T4</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
-  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
-  <text lang="de">R47</text>
-</field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
-  <text lang="de">Kiste T4</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Status">
+  <text lang="de">inventarisiert</text>
 </field>
 #+end_example
