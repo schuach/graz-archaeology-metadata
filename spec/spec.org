@@ -1,0 +1,140 @@
+#+title: Specification
+
+* Create the table
+Some very simple XQuery here, to create an org-mode table for every field:
+
+#+begin_src xquery
+declare default element namespace "http://www.m-box.at/schema/archive";
+"| Feldbezeichnung | Ziel | Anmerkung |",
+"|---|---|---|",
+
+for $field in /root/archive/item/field/@name => distinct-values()
+return "| " || $field || " | |"
+#+end_src
+
+* Table
+
+
+
+| Field                               | Target                                                                                       | Note                                 | Done? |
+|-------------------------------------+----------------------------------------------------------------------------------------------+--------------------------------------+-------|
+| Adresse                             | none                                                                                         | always "-"                           | Y     |
+| Arthandling möglich                 |                                                                                              | always "true"                        |       |
+| Ausstellungsfähig                   |                                                                                              | always "true"                        |       |
+| Bearbeitet von                      |                                                                                              | should not appear in public Metadata | Y     |
+| Bemerkungen                         | none                                                                                         | always empty                         | Y     |
+| Bez., Signaturen, Punzen, Marken    | =objectDescriptionSet=                                                                       |                                      | Y     |
+| Copyright                           | none                                                                                         | always empty                         | Y     |
+| Datierung                           |                                                                                              | human readable dates                 |       |
+| Eigentümer*in                       |                                                                                              |                                      |       |
+| Eingangsart                         |                                                                                              |                                      |       |
+| Eingangsdatum                       |                                                                                              |                                      |       |
+| erworben von                        | none                                                                                         | always empty                         | Y     |
+| Flächen-/Schnittnummer              |                                                                                              |                                      |       |
+| Gemeinde                            |                                                                                              |                                      |       |
+| Grabungsobjektbezeichnung           |                                                                                              |                                      |       |
+| Grabungsobjektnummer                |                                                                                              |                                      |       |
+| Grundstücksnummer                   |                                                                                              |                                      |       |
+| Hersteller/Künstler*in Name         | none                                                                                         | always empty                         | Y     |
+| Hersteller/Künstler*in Rolle        | none                                                                                         | always empty                         | Y     |
+| Herstellung/Verwendungszweck        | none                                                                                         | always empty                         | Y     |
+| IDs Bildorte                        | none                                                                                         | always empty                         | Y     |
+| IDs Standort                        | none                                                                                         | always empty                         | Y     |
+| Identifizierungsgrad                | =objectDescriptionSet=                                                                       |                                      | Y     |
+| Institution                         | =administrativeMetadata/../recordSource/legalBodyName/appelationValue=                       |                                      |       |
+| Inventarnummer                      |                                                                                              |                                      |       |
+| Katastralgemeinde                   |                                                                                              |                                      |       |
+| Kategorie                           |                                                                                              |                                      |       |
+| Kistennummer                        | none                                                                                         | always "-"                           | Y     |
+| Konservatorische Bemerkungen        | none                                                                                         | always empty                         | Y     |
+| Koordinaten GK M34                  | none                                                                                         | always empty                         | Y     |
+| Kurzbeschreibung                    |                                                                                              |                                      |       |
+| Literatur                           |                                                                                              |                                      |       |
+| Material                            | =displayMaterialsTech=; =termMaterialsTech[@"http://terminology.lido-schema.org/lido00513"]= |                                      | Y     |
+| Maße                                | =displayObjsectMeasurements=                                                                 |                                      | Y     |
+| Maßnahmenbezeichnung                |                                                                                              |                                      |       |
+| Maßnahmennummer                     |                                                                                              |                                      |       |
+| Nummernhistorie                     |                                                                                              |                                      |       |
+| Objektbeschreibung                  | =objectDescriptionSet=                                                                       |                                      | Y     |
+| Objektbiografie                     | =objectDescriptionSet=                                                                       |                                      | Y     |
+| Objektkurzbezeichnung               |                                                                                              |                                      |       |
+| Objektstandort Aufstellungseinheit  |                                                                                              |                                      |       |
+| Objektstandort Gebäude/Raum         |                                                                                              |                                      |       |
+| Objektstandort Verpackungseinheit   |                                                                                              |                                      |       |
+| Objektzustand Allgemein             | =objectDescriptionSet=                                                                       |                                      | Y     |
+| Politischer Bezirk                  |                                                                                              |                                      |       |
+| Provenienzbewertung                 | =objectDescriptionSet=                                                                       |                                      | Y     |
+| Provenienzbewertung Begründung      | =objectDescriptionSet=                                                                       |                                      | Y     |
+| Registrierdatum                     |                                                                                              | maybe date of find?                  |       |
+| Restauratorische Maßnahmen          | none                                                                                         | always empty                         | Y     |
+| Rückseite                           |                                                                                              |                                      |       |
+| SE-Bezeichnung                      |                                                                                              |                                      |       |
+| SE-Nummer                           |                                                                                              |                                      |       |
+| Sammlungsgebiet                     |                                                                                              |                                      |       |
+| Schlagworte                         | =objectWorkTypeWrap/objectWorkType= for each term separated by =/; */=                       |                                      | Y     |
+| Schäden                             | =objectDescriptionSet=                                                                       |                                      | Y     |
+| Status                              |                                                                                              | always "inventarisiert"              |       |
+| Stück                               |                                                                                              |                                      |       |
+| Technik                             | =displayMaterialsTech=; =termMaterialsTech[@"http://terminology.lido-schema.org/lido00131"]= |                                      | Y     |
+| Titel                               | =titleSet/appelationValue=                                                                   |                                      | Y     |
+| Voreigentümer*in Name               |                                                                                              |                                      |       |
+| Voreigentümer*in Ort                |                                                                                              |                                      |       |
+| Voreigentümer*in Rolle              |                                                                                              |                                      |       |
+| Weiterführenden Quellen/Archivalien | none                                                                                         | always empty                         | Y     |
+| Wert                                | none                                                                                         | always empty                         | Y     |
+#+TBLFM: $2=objectWorkTypeWrap/objectWorkType= for each
+
+
+#+begin_src xquery :db grazArchaeology
+declare default element namespace "http://www.m-box.at/schema/archive";
+//field[starts-with(@name, "Objektstandort")]
+#+end_src
+
+#+RESULTS:
+#+begin_example
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
+  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
+  <text lang="de">R47</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
+  <text lang="de">Kiste T19</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
+  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
+  <text lang="de">R47</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
+  <text lang="de">Kiste T16</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
+  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
+  <text lang="de">R47</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
+  <text lang="de">Kiste T4</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
+  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
+  <text lang="de">R47</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
+  <text lang="de">Kiste T4</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Gebäude/Raum">
+  <text lang="de">Stadtarchäologie, Styriastraße 23,8042 Graz</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Aufstellungseinheit">
+  <text lang="de">R47</text>
+</field>
+<field xmlns="http://www.m-box.at/schema/archive" name="Objektstandort Verpackungseinheit">
+  <text lang="de">Kiste T4</text>
+</field>
+#+end_example
