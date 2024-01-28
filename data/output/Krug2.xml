@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lido:lido xmlns:lido="http://lido-schema.org"
+           xmlns:map="http://www.w3.org/2005/xpath-functions/map"
+           xmlns:mbox="http://www.m-box.at/schema/archive"
+           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <lido:lidoRecID lido:type="http://terminology.lido-schema.org/lido00100"
+                   lido:source="GrazMuseum">2a5833c3-7b60-4cb5-bb41-c740666d7092</lido:lidoRecID>
+   <lido:category>
+      <skos:Concept rdf:about="http://terminology.lido-schema.org/lido00096">
+         <skos:prefLabel xml:lang="en">Human-made object</skos:prefLabel>
+      </skos:Concept>
+   </lido:category>
+   <lido:descriptiveMetadata xml:lang="de">
+      <lido:objectClassificationWrap>
+         <lido:objectWorkTypeWrap>
+            <lido:objectWorkType>Oinochoe</lido:objectWorkType>
+            <lido:objectWorkType>Kanne</lido:objectWorkType>
+            <lido:objectWorkType>Glasur</lido:objectWorkType>
+            <lido:objectWorkType>Ausguss</lido:objectWorkType>
+            <lido:objectWorkType>Rillenverzierung</lido:objectWorkType>
+         </lido:objectWorkTypeWrap>
+      </lido:objectClassificationWrap>
+      <lido:objectIdentificationWrap>
+         <lido:titleWrap>
+            <lido:titleSet>
+               <lido:appellationValue>Oinochoeförmiges Gefäß</lido:appellationValue>
+            </lido:titleSet>
+         </lido:titleWrap>
+         <lido:objectMeasurementsWrap>
+            <lido:objectMeasurementsSet>
+               <lido:displayObjectMeasurements xml:lang="de">18,4x11,0x20,5</lido:displayObjectMeasurements>
+            </lido:objectMeasurementsSet>
+         </lido:objectMeasurementsWrap>
+         <lido:objectMaterialsTechWrap>
+            <lido:objectMaterialsTechSet>
+               <lido:displayMaterialsTech>Keramik; Irdenware, Scheibengedreht</lido:displayMaterialsTech>
+               <lido:materialsTech>
+                  <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00513">
+                     <lido:term xml:lang="de">Keramik; Irdenware</lido:term>
+                  </lido:termMaterialsTech>
+                  <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00131">
+                     <lido:term xml:lang="de">Scheibengedreht</lido:term>
+                  </lido:termMaterialsTech>
+               </lido:materialsTech>
+            </lido:objectMaterialsTechSet>
+         </lido:objectMaterialsTechWrap>
+         <lido:repositoryWrap>
+            <lido:repositorySet type="http://terminology.lido-schema.org/lido01018">
+               <lido:displayRepository xml:lang="de">Stadtmuseum Graz GmbH: Stadtarchäologie, Styriastraße 23,8042 Graz, R47, Kiste T4</lido:displayRepository>
+               <lido:repositoryName>
+                  <lido:legalBodyName>
+                     <lido:appellationValue>Stadtmuseum Graz GmbH</lido:appellationValue>
+                  </lido:legalBodyName>
+                  <lido:legalBodyWeblink>https://www.grazmuseum.at/</lido:legalBodyWeblink>
+               </lido:repositoryName>
+               <lido:workId type="http://terminology.lido-schema.org/lido00113">STA-00088</lido:workId>
+            </lido:repositorySet>
+         </lido:repositoryWrap>
+      </lido:objectIdentificationWrap>
+      <lido:objectDescriptionWrap>
+         <lido:objectDescriptionSet>
+            <lido:descriptiveNoteValue xml:lang="de">Objektbeschreibung: Oinochoeförmiges Gefäß/Kleeblattkanne: Stark bauchige Kanne mit Henkel; an der Mitte des Bauches zwei waagrecht parallel laufende Rillenverzierungen; Die Kanne ist glasiert mit weißgräulicher bis bräunlich schimmernder Glasur; Schulter flach zum Bauch übergehend; am Rand beidseitig abgebrochen; Am unteren Henkelende mit Finger platt gedrückt; angedrückter Ausguss; kein Stempel</lido:descriptiveNoteValue>
+         </lido:objectDescriptionSet>
+         <lido:objectDescriptionSet>
+            <lido:descriptiveNoteValue xml:lang="de">Identifizierungsgrad: Eindeutig</lido:descriptiveNoteValue>
+         </lido:objectDescriptionSet>
+         <lido:objectDescriptionSet>
+            <lido:descriptiveNoteValue xml:lang="de">Provenienzbewertung: Unbedenklich</lido:descriptiveNoteValue>
+         </lido:objectDescriptionSet>
+         <lido:objectDescriptionSet>
+            <lido:descriptiveNoteValue xml:lang="de">Provenienzbewertung Begründung: Aufgrund der Herkunft (archäologische Grabung) wurde die Provenienz als unbedenklich eingestuft. Nachdem die Grabungen im Bereich des ehemaligen NS-Zwangsarbeiterlagers Graz-Liebenau stattfanden, liegt jedoch hinsichtlich der (den) Objektbiographie(n) ein historischer Unrechtskontext vor.</lido:descriptiveNoteValue>
+         </lido:objectDescriptionSet>
+         <lido:objectDescriptionSet>
+            <lido:descriptiveNoteValue xml:lang="de">Bez., Signaturen, Punzen, Marken: An der Mitte des Bauches zwei waagrecht parallel laufende Rillenverzierungen; kein Stempel</lido:descriptiveNoteValue>
+         </lido:objectDescriptionSet>
+         <lido:objectDescriptionSet>
+            <lido:descriptiveNoteValue xml:lang="de">Objektzustand Allgemein: gut</lido:descriptiveNoteValue>
+         </lido:objectDescriptionSet>
+         <lido:objectDescriptionSet>
+            <lido:descriptiveNoteValue xml:lang="de">Schäden: Gebrochen</lido:descriptiveNoteValue>
+         </lido:objectDescriptionSet>
+      </lido:objectDescriptionWrap>
+      <lido:eventWrap>
+         <lido:eventSet>
+            <lido:event>
+               <lido:eventType>http://terminology.lido-schema.org/lido00007</lido:eventType>
+               <lido:eventDate>
+                  <lido:displayDate>19. - 20. Jahrhundert</lido:displayDate>
+               </lido:eventDate>
+            </lido:event>
+         </lido:eventSet>
+         <lido:eventSet>
+            <lido:event>
+               <lido:eventType>http://terminology.lido-schema.org/lido01184</lido:eventType>
+               <lido:eventDesriptionSet>
+                  <lido:descriptiveNoteValue xml:lang="de">Eingangsart: Schenkung</lido:descriptiveNoteValue>
+                  <lido:descriptiveNoteValue xml:lang="de">Voreigentümer*in Name: Energie Steiermark Green Power GmbH</lido:descriptiveNoteValue>
+                  <lido:descriptiveNoteValue xml:lang="de">Voreigentümer*in Ort: Leonhardgürtel 10, 8010 Graz</lido:descriptiveNoteValue>
+                  <lido:descriptiveNoteValue xml:lang="de">Voreigentümer*in Rolle: Auftraggeber</lido:descriptiveNoteValue>
+                  <lido:descriptiveNoteValue xml:lang="de">Eingangsdatum: 10.06.2021</lido:descriptiveNoteValue>
+                  <lido:descriptiveNoteValue xml:lang="de">Status: inventarisiert</lido:descriptiveNoteValue>
+               </lido:eventDesriptionSet>
+            </lido:event>
+         </lido:eventSet>
+         <lido:eventSet>
+            <lido:event>
+               <lido:eventType>http://terminology.lido-schema.org/lido00225</lido:eventType>
+               <lido:eventPlace>
+                  <lido:displayPlace>Gemeinde: Graz | Katastralgemeinde: Liebenau, Gries | Grundstücksnummer: -</lido:displayPlace>
+               </lido:eventPlace>
+            </lido:event>
+         </lido:eventSet>
+      </lido:eventWrap>
+   </lido:descriptiveMetadata>
+   <lido:administrativeMetadata xml:lang="de">
+      <lido:recordWrap>
+         <lido:recordID lido:type="http://terminology.lido-schema.org/lido00100">2a5833c3-7b60-4cb5-bb41-c740666d7092</lido:recordID>
+         <lido:recordType>
+            <lido:term>single object</lido:term>
+         </lido:recordType>
+         <lido:recordSource>
+            <lido:legalBodyName>
+               <lido:appellationValue>Stadtmuseum Graz GmbH</lido:appellationValue>
+            </lido:legalBodyName>
+            <lido:legalBodyWeblink>https://www.grazmuseum.at/</lido:legalBodyWeblink>
+         </lido:recordSource>
+      </lido:recordWrap>
+   </lido:administrativeMetadata>
+</lido:lido>
