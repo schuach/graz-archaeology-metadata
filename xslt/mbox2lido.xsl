@@ -87,6 +87,10 @@
               </lido:eventDesriptionSet>
             </lido:event>
           </lido:eventSet>
+          <!-- excavation event -->
+          <lido:eventSet>
+            <xsl:call-template name="makeExcavationEvent" />
+          </lido:eventSet>
         </lido:eventWrap>
       </lido:descriptiveMetadata>
       <lido:administrativeMetadata xml:lang="de">
@@ -170,11 +174,27 @@
       <xsl:if test="mbox:text != ''">
         <lido:objectDescriptionSet>
           <lido:descriptiveNoteValue xml:lang="de">{
-         @name || ": " || mbox:text
-      }</lido:descriptiveNoteValue>
+            @name || ": " || mbox:text
+          }</lido:descriptiveNoteValue>
         </lido:objectDescriptionSet>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
 
+  <!-- excavation event -->
+  <xsl:template name="makeExcavationEvent">
+    <xsl:variable name="flaechenSchnittNummer" select="mbox:field[@name='Flächen/Schnittnummer']" />
+    <xsl:variable name="gemeinde" select="mbox:field[@name='Gemeinde']" />
+    <xsl:variable name="grundstuecksnummer" select="mbox:field[@name='Grundstücksnummer']" />
+    <xsl:variable name="katastralgemeinde" select="mbox:field[@name='Katastralgemeinde']" />
+    <lido:event>
+      <lido:eventType>http://terminology.lido-schema.org/lido00225</lido:eventType>
+      <lido:eventPlace>
+        <lido:displayPlace>{
+          ($gemeinde, $katastralgemeinde, $grundstuecksnummer, $flaechenSchnittNummer) ! string-join((@name, mbox:text), ": ") => string-join(" | ")
+        }</lido:displayPlace>
+
+      </lido:eventPlace>
+    </lido:event>
+  </xsl:template>
 </xsl:stylesheet>

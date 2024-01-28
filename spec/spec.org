@@ -30,11 +30,11 @@ return "| " || $field || " | |"
 | Eingangsart                         | acquisition event, =descriptiveNoteValue=                                                    |                                      | Y     |
 | Eingangsdatum                       | acquisition event, =descriptiveNoteValue=                                                    |                                      | Y     |
 | erworben von                        | none                                                                                         | always empty                         | Y     |
-| Flächen-/Schnittnummer              |                                                                                              |                                      |       |
-| Gemeinde                            |                                                                                              |                                      |       |
+| Flächen-/Schnittnummer              | excavation event, =eventPlace=                                                               |                                      |       |
+| Gemeinde                            | excavation event, =eventPlace=                                                               |                                      |       |
 | Grabungsobjektbezeichnung           |                                                                                              |                                      |       |
 | Grabungsobjektnummer                |                                                                                              |                                      |       |
-| Grundstücksnummer                   |                                                                                              |                                      |       |
+| Grundstücksnummer                   | excavation event, =eventPlace=                                                               |                                      |       |
 | Hersteller/Künstler*in Name         | none                                                                                         | always empty                         | Y     |
 | Hersteller/Künstler*in Rolle        | none                                                                                         | always empty                         | Y     |
 | Herstellung/Verwendungszweck        | none                                                                                         | always empty                         | Y     |
@@ -43,7 +43,7 @@ return "| " || $field || " | |"
 | Identifizierungsgrad                | =objectDescriptionSet=                                                                       |                                      | Y     |
 | Institution                         | =administrativeMetadata/../recordSource/legalBodyName/appelationValue=                       |                                      |       |
 | Inventarnummer                      |                                                                                              |                                      |       |
-| Katastralgemeinde                   |                                                                                              |                                      |       |
+| Katastralgemeinde                   | excavation event, =eventPlace=                                                               |                                      |       |
 | Kategorie                           |                                                                                              |                                      |       |
 | Kistennummer                        | none                                                                                         | always "-"                           | Y     |
 | Konservatorische Bemerkungen        | none                                                                                         | always empty                         | Y     |
