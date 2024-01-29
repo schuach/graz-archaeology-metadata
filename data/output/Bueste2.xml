@@ -113,6 +113,27 @@
                <lido:eventPlace>
                   <lido:displayPlace>Gemeinde: Graz | Katastralgemeinde: Jakomini | Grundstücksnummer: 2155/2</lido:displayPlace>
                </lido:eventPlace>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Nummernhistorie: Fnd. Nr.:16</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Stück: 1</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Registrierdatum: 05.01.2023</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Maßnahmennummer: 63113.17.01</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Maßnahmenbezeichnung: Hilfsdrainage</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Grabungsobjektnummer: 2</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>SE-Nummer: 13</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
             </lido:event>
          </lido:eventSet>
       </lido:eventWrap>

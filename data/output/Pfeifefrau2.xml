@@ -110,6 +110,27 @@ Unterer Ansatz der Pfeife gebrochen.</lido:descriptiveNoteValue>
                <lido:eventPlace>
                   <lido:displayPlace>Gemeinde: Graz | Katastralgemeinde: Liebenau | Grundstücksnummer: 2156/2</lido:displayPlace>
                </lido:eventPlace>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Nummernhistorie: Fnd. Nr.: 44</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Stück: 1</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Registrierdatum: 20.07.2022</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Maßnahmennummer: 63113.17.01</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Maßnahmenbezeichnung: Heimgartenanlage</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>SE-Nummer: 38</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>SE-Bezeichnung: Planierschicht</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
             </lido:event>
          </lido:eventSet>
       </lido:eventWrap>

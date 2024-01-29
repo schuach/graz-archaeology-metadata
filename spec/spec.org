@@ -32,8 +32,8 @@ return "| " || $field || " | |"
 | erworben von                        | none                                                                                         | always empty                         | Y     |
 | Flächen-/Schnittnummer              | excavation event, =eventPlace=                                                               |                                      |       |
 | Gemeinde                            | excavation event, =eventPlace=                                                               |                                      |       |
-| Grabungsobjektbezeichnung           |                                                                                              |                                      |       |
-| Grabungsobjektnummer                |                                                                                              |                                      |       |
+| Grabungsobjektbezeichnung           | excavation event, =eventDescriptionNote=                                                     |                                      | Y     |
+| Grabungsobjektnummer                | excavation event, =eventDescriptionNote=                                                     |                                      | Y     |
 | Grundstücksnummer                   | excavation event, =eventPlace=                                                               |                                      |       |
 | Hersteller/Künstler*in Name         | none                                                                                         | always empty                         | Y     |
 | Hersteller/Künstler*in Rolle        | none                                                                                         | always empty                         | Y     |
@@ -48,12 +48,12 @@ return "| " || $field || " | |"
 | Kistennummer                        | none                                                                                         | always "-"                           | Y     |
 | Konservatorische Bemerkungen        | none                                                                                         | always empty                         | Y     |
 | Koordinaten GK M34                  | none                                                                                         | always empty                         | Y     |
-| Kurzbeschreibung                    |                                                                                              |                                      |       |
+| Kurzbeschreibung                    | no info that 'Titel' does not provide                                                        |                                      | Y     |
 | Literatur                           |                                                                                              |                                      |       |
 | Material                            | =displayMaterialsTech=; =termMaterialsTech[@"http://terminology.lido-schema.org/lido00513"]= |                                      | Y     |
 | Maße                                | =displayObjsectMeasurements=                                                                 |                                      | Y     |
-| Maßnahmenbezeichnung                |                                                                                              |                                      |       |
-| Maßnahmennummer                     |                                                                                              |                                      |       |
+| Maßnahmenbezeichnung                | excavation event, =eventDescriptionSet=                                                      |                                      | Y     |
+| Maßnahmennummer                     | excavation event, =eventDescriptionSet=                                                      |                                      | Y     |
 | Nummernhistorie                     |                                                                                              |                                      |       |
 | Objektbeschreibung                  | =objectDescriptionSet=                                                                       |                                      | Y     |
 | Objektbiografie                     | =objectDescriptionSet=                                                                       |                                      | Y     |
@@ -65,16 +65,16 @@ return "| " || $field || " | |"
 | Politischer Bezirk                  |                                                                                              |                                      |       |
 | Provenienzbewertung                 | =objectDescriptionSet=                                                                       |                                      | Y     |
 | Provenienzbewertung Begründung      | =objectDescriptionSet=                                                                       |                                      | Y     |
-| Registrierdatum                     |                                                                                              | maybe date of find?                  |       |
+| Registrierdatum                     | excavation event, =eventDescriptionSet=                                                      | maybe date of find?                  | Y     |
 | Restauratorische Maßnahmen          | none                                                                                         | always empty                         | Y     |
-| Rückseite                           |                                                                                              |                                      |       |
-| SE-Bezeichnung                      |                                                                                              |                                      |       |
-| SE-Nummer                           |                                                                                              |                                      |       |
+| Rückseite                           | none                                                                                         | always empty                         | Y     |
+| SE-Bezeichnung                      | excavation event, =eventDescriptionSet=                                                      |                                      | Y     |
+| SE-Nummer                           | excavation event, =eventDescriptionSet=                                                      |                                      | Y     |
 | Sammlungsgebiet                     |                                                                                              |                                      |       |
 | Schlagworte                         | =objectWorkTypeWrap/objectWorkType= for each term separated by =/; */=                       |                                      | Y     |
 | Schäden                             | =objectDescriptionSet=                                                                       |                                      | Y     |
 | Status                              | acquisition event, =descriptiveNoteValue=                                                    | always "inventarisiert"              | Y     |
-| Stück                               |                                                                                              |                                      |       |
+| Stück                               | excavation event, =eventDescriptionSet=                                                      |                                      | Y     |
 | Technik                             | =displayMaterialsTech=; =termMaterialsTech[@"http://terminology.lido-schema.org/lido00131"]= |                                      | Y     |
 | Titel                               | =titleSet/appelationValue=                                                                   |                                      | Y     |
 | Voreigentümer*in Name               | acquisition event, =descriptiveNoteValue=                                                    |                                      | Y     |
@@ -87,24 +87,24 @@ return "| " || $field || " | |"
 
 #+begin_src xquery :db grazArchaeology
 declare default element namespace "http://www.m-box.at/schema/archive";
-//field[starts-with(@name, "Status")]
+//field[starts-with(@name, "Kurzbeschreibung")]
 #+end_src
 
 #+RESULTS:
 #+begin_example
-<field xmlns="http://www.m-box.at/schema/archive" name="Status">
-  <text lang="de">inventarisiert</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Kurzbeschreibung">
+  <text lang="de">Büste ohne Kopf</text>
 </field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Status">
-  <text lang="de">inventarisiert</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Kurzbeschreibung">
+  <text lang="de">Mineralwasserflaschen</text>
 </field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Status">
-  <text lang="de">inventarisiert</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Kurzbeschreibung">
+  <text lang="de">Kaffeehauspfeifen</text>
 </field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Status">
-  <text lang="de">inventarisiert</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Kurzbeschreibung">
+  <text lang="de">Kanne aus Keramik</text>
 </field>
-<field xmlns="http://www.m-box.at/schema/archive" name="Status">
-  <text lang="de">inventarisiert</text>
+<field xmlns="http://www.m-box.at/schema/archive" name="Kurzbeschreibung">
+  <text lang="de">Porzellanpfeife</text>
 </field>
 #+end_example

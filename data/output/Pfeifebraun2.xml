@@ -113,6 +113,33 @@ Stück 2: geometrische Muster (Strickmuster); filigrane Rankenornamente; an der 
                <lido:eventPlace>
                   <lido:displayPlace>Gemeinde: Graz | Katastralgemeinde: Jakomini | Grundstücksnummer: 2156/2</lido:displayPlace>
                </lido:eventPlace>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Nummernhistorie: Fnd. Nr.: 42</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Stück: 2</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Registrierdatum: 06.07.2022</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Maßnahmennummer: 63113.17.01</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Maßnahmenbezeichnung: Heimgartenanlage</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Grabungsobjektnummer: 12</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Grabungsobjektbezeichnung: Bombentrichter</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>SE-Nummer: 36</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>SE-Bezeichnung: Bombentrichter-Verfüllung</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
             </lido:event>
          </lido:eventSet>
       </lido:eventWrap>

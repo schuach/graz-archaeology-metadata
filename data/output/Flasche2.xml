@@ -117,6 +117,33 @@ Unter dem Rundstempel steht KÖNIGLICH PREUSSISCHE BRUNNEN-VERWALTUNG. Schraubve
                <lido:eventPlace>
                   <lido:displayPlace>Gemeinde: Graz | Katastralgemeinde: Jakomini | Grundstücksnummer: 2155/2</lido:displayPlace>
                </lido:eventPlace>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Nummernhistorie: Fnd. Nr.: 52</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Stück: 9</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Registrierdatum: 26.07.2022</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Maßnahmennummer: 63113.17.01</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Maßnahmenbezeichnung: Heimgartenanlage</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Grabungsobjektnummer: 2</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>Grabungsobjektbezeichnung: Grube</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>SE-Nummer: 13</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
+               <lido:eventDescriptionSet>
+                  <lido:descriptiveNoteValue>SE-Bezeichnung: Grube-Verfüllung</lido:descriptiveNoteValue>
+               </lido:eventDescriptionSet>
             </lido:event>
          </lido:eventSet>
       </lido:eventWrap>

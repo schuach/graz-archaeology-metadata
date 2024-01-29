@@ -88,9 +88,7 @@
             </lido:event>
           </lido:eventSet>
           <!-- excavation event -->
-          <lido:eventSet>
-            <xsl:call-template name="makeExcavationEvent" />
-          </lido:eventSet>
+          <xsl:call-template name="makeExcavationEvent" />
         </lido:eventWrap>
       </lido:descriptiveMetadata>
       <lido:administrativeMetadata xml:lang="de">
@@ -171,7 +169,7 @@
                        'Provenienzbewertung',
                        'Provenienzbewertung Begründung'
                        )]" >
-      <xsl:if test="mbox:text != ''">
+      <xsl:if test="(mbox:text != '-') and (mbox:text != '')">
         <lido:objectDescriptionSet>
           <lido:descriptiveNoteValue xml:lang="de">{
             @name || ": " || mbox:text
@@ -187,14 +185,34 @@
     <xsl:variable name="gemeinde" select="mbox:field[@name='Gemeinde']" />
     <xsl:variable name="grundstuecksnummer" select="mbox:field[@name='Grundstücksnummer']" />
     <xsl:variable name="katastralgemeinde" select="mbox:field[@name='Katastralgemeinde']" />
-    <lido:event>
-      <lido:eventType>http://terminology.lido-schema.org/lido00225</lido:eventType>
-      <lido:eventPlace>
-        <lido:displayPlace>{
+    <lido:eventSet>
+      <lido:event>
+        <lido:eventType>http://terminology.lido-schema.org/lido00225</lido:eventType>
+        <lido:eventPlace>
+          <lido:displayPlace>{
           ($gemeinde, $katastralgemeinde, $grundstuecksnummer, $flaechenSchnittNummer) ! string-join((@name, mbox:text), ": ") => string-join(" | ")
         }</lido:displayPlace>
 
-      </lido:eventPlace>
-    </lido:event>
+        </lido:eventPlace>
+        <xsl:for-each select="mbox:field[@name=(
+                               'Grabungsobjektbezeichnung',
+                              'Grabungsobjektnummer',
+                              'Maßnahmennummer',
+                              'Maßnahmenbezeichnung',
+                              'Nummernhistorie',
+                              'Registrierdatum',
+                              'SE-Nummer',
+                              'SE-Bezeichnung',
+                              'Stück'
+                              )]">
+
+          <xsl:if test="(mbox:text != '-') and (mbox:text != '')">
+            <lido:eventDescriptionSet>
+              <lido:descriptiveNoteValue>{@name || ": " || mbox:text}</lido:descriptiveNoteValue>
+            </lido:eventDescriptionSet>
+          </xsl:if>
+        </xsl:for-each>
+      </lido:event>
+    </lido:eventSet>
   </xsl:template>
 </xsl:stylesheet>
