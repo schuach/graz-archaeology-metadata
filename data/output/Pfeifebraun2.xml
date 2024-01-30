@@ -1,161 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<lido:lido xmlns:lido="http://lido-schema.org"
-           xmlns:map="http://www.w3.org/2005/xpath-functions/map"
-           xmlns:mbox="http://www.m-box.at/schema/archive"
-           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-           xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
-   <lido:lidoRecID lido:type="http://terminology.lido-schema.org/lido00100"
-                   lido:source="GrazMuseum">e00d0c75-f187-4a48-bcd6-accde6d2c7a4</lido:lidoRecID>
-   <lido:category>
-      <skos:Concept rdf:about="http://terminology.lido-schema.org/lido00096">
-         <skos:prefLabel xml:lang="en">Human-made object</skos:prefLabel>
-      </skos:Concept>
-   </lido:category>
-   <lido:descriptiveMetadata xml:lang="de">
-      <lido:objectClassificationWrap>
-         <lido:objectWorkTypeWrap>
-            <lido:objectWorkType>Kaffeehauspfeife</lido:objectWorkType>
-            <lido:objectWorkType>Pfeife</lido:objectWorkType>
-            <lido:objectWorkType>Ornament</lido:objectWorkType>
-            <lido:objectWorkType>Ranken</lido:objectWorkType>
-            <lido:objectWorkType>Keramik</lido:objectWorkType>
-            <lido:objectWorkType>Schrift</lido:objectWorkType>
-         </lido:objectWorkTypeWrap>
-      </lido:objectClassificationWrap>
-      <lido:objectIdentificationWrap>
-         <lido:titleWrap>
-            <lido:titleSet>
-               <lido:appellationValue>Kaffeehauspfeifen</lido:appellationValue>
-            </lido:titleSet>
-         </lido:titleWrap>
-         <lido:objectMeasurementsWrap>
-            <lido:objectMeasurementsSet>
-               <lido:displayObjectMeasurements xml:lang="de">5,7x2,6x6,1 cm; 5,6x1,9x6,9 cm</lido:displayObjectMeasurements>
-            </lido:objectMeasurementsSet>
-         </lido:objectMeasurementsWrap>
-         <lido:objectMaterialsTechWrap>
-            <lido:objectMaterialsTechSet>
-               <lido:displayMaterialsTech>Keramik; Irdenware, gebrannt</lido:displayMaterialsTech>
-               <lido:materialsTech>
-                  <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00513">
-                     <lido:term xml:lang="de">Keramik; Irdenware</lido:term>
-                  </lido:termMaterialsTech>
-                  <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00131">
-                     <lido:term xml:lang="de">gebrannt</lido:term>
-                  </lido:termMaterialsTech>
-               </lido:materialsTech>
-            </lido:objectMaterialsTechSet>
-         </lido:objectMaterialsTechWrap>
-         <lido:repositoryWrap>
-            <lido:repositorySet type="http://terminology.lido-schema.org/lido01018">
-               <lido:displayRepository xml:lang="de">Stadtmuseum Graz GmbH: Stadtarchäologie, Styriastraße 23,8042 Graz, R47, Kiste T4</lido:displayRepository>
-               <lido:repositoryName>
-                  <lido:legalBodyName>
-                     <lido:appellationValue>Stadtmuseum Graz GmbH</lido:appellationValue>
-                  </lido:legalBodyName>
-                  <lido:legalBodyWeblink>https://www.grazmuseum.at/</lido:legalBodyWeblink>
-               </lido:repositoryName>
-               <lido:workId type="http://terminology.lido-schema.org/lido00113">STA-00091</lido:workId>
-            </lido:repositorySet>
-         </lido:repositoryWrap>
-      </lido:objectIdentificationWrap>
-      <lido:objectDescriptionWrap>
-         <lido:objectDescriptionSet>
-            <lido:descriptiveNoteValue xml:lang="de">Objektbeschreibung: Kaffeehauspfeifen; starke Nutzungsspuren; schlanker Kopf mit sechs Facetten; Ornamentverzierung.&#xD;
+<lido:lidoWrap xmlns:lido="http://www.lido-schema.org"
+               xmlns:map="http://www.w3.org/2005/xpath-functions/map"
+               xmlns:mbox="http://www.m-box.at/schema/archive"
+               xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+               xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.lido-schema.org http://www.lido-schema.org/schema/v1.0/lido-v1.0.xsd">
+   <lido:lido>
+      <lido:lidoRecID lido:type="http://terminology.lido-schema.org/lido00100"
+                      lido:source="GrazMuseum">e00d0c75-f187-4a48-bcd6-accde6d2c7a4</lido:lidoRecID>
+      <lido:category>
+         <skos:Concept rdf:about="http://terminology.lido-schema.org/lido00096">
+            <skos:prefLabel xml:lang="en">Human-made object</skos:prefLabel>
+         </skos:Concept>
+      </lido:category>
+      <lido:descriptiveMetadata xml:lang="de">
+         <lido:objectClassificationWrap>
+            <lido:objectWorkTypeWrap>
+               <lido:objectWorkType>Kaffeehauspfeife</lido:objectWorkType>
+               <lido:objectWorkType>Pfeife</lido:objectWorkType>
+               <lido:objectWorkType>Ornament</lido:objectWorkType>
+               <lido:objectWorkType>Ranken</lido:objectWorkType>
+               <lido:objectWorkType>Keramik</lido:objectWorkType>
+               <lido:objectWorkType>Schrift</lido:objectWorkType>
+            </lido:objectWorkTypeWrap>
+         </lido:objectClassificationWrap>
+         <lido:objectIdentificationWrap>
+            <lido:titleWrap>
+               <lido:titleSet>
+                  <lido:appellationValue>Kaffeehauspfeifen</lido:appellationValue>
+               </lido:titleSet>
+            </lido:titleWrap>
+            <lido:objectMeasurementsWrap>
+               <lido:objectMeasurementsSet>
+                  <lido:displayObjectMeasurements xml:lang="de">5,7x2,6x6,1 cm; 5,6x1,9x6,9 cm</lido:displayObjectMeasurements>
+               </lido:objectMeasurementsSet>
+            </lido:objectMeasurementsWrap>
+            <lido:objectMaterialsTechWrap>
+               <lido:objectMaterialsTechSet>
+                  <lido:displayMaterialsTech>Keramik; Irdenware, gebrannt</lido:displayMaterialsTech>
+                  <lido:materialsTech>
+                     <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00513">
+                        <lido:term xml:lang="de">Keramik; Irdenware</lido:term>
+                     </lido:termMaterialsTech>
+                     <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00131">
+                        <lido:term xml:lang="de">gebrannt</lido:term>
+                     </lido:termMaterialsTech>
+                  </lido:materialsTech>
+               </lido:objectMaterialsTechSet>
+            </lido:objectMaterialsTechWrap>
+            <lido:repositoryWrap>
+               <lido:repositorySet xmlns:lido="http://lido-schema.org"
+                                   type="http://terminology.lido-schema.org/lido01018">
+                  <lido:displayRepository xml:lang="de">Stadtmuseum Graz GmbH: Stadtarchäologie, Styriastraße 23,8042 Graz, R47, Kiste T4</lido:displayRepository>
+                  <lido:repositoryName>
+                     <lido:legalBodyName>
+                        <lido:appellationValue>Stadtmuseum Graz GmbH</lido:appellationValue>
+                     </lido:legalBodyName>
+                     <lido:legalBodyWeblink>https://www.grazmuseum.at/</lido:legalBodyWeblink>
+                  </lido:repositoryName>
+                  <lido:workId type="http://terminology.lido-schema.org/lido00113">STA-00091</lido:workId>
+               </lido:repositorySet>
+            </lido:repositoryWrap>
+         </lido:objectIdentificationWrap>
+         <lido:objectDescriptionWrap>
+            <lido:objectDescriptionSet xmlns:lido="http://lido-schema.org">
+               <lido:descriptiveNoteValue xml:lang="de">Objektbeschreibung: Kaffeehauspfeifen; starke Nutzungsspuren; schlanker Kopf mit sechs Facetten; Ornamentverzierung.&#xD;
 Stück 1: filigrane Ranken-, Blüten- und Netztornamente; an der Mundöffnung eingetiefte Rillenverzierung; am oberen Schaft gebrochen.&#xD;
 Stück 2: geometrische Muster (Strickmuster); filigrane Rankenornamente; an der Mundöffnung Speichenrad(?) und Rankenverzierung; beidseitiger erhabener Schriftzug: "COLN"; "PATENT(/C)"</lido:descriptiveNoteValue>
-         </lido:objectDescriptionSet>
-         <lido:objectDescriptionSet>
-            <lido:descriptiveNoteValue xml:lang="de">Identifizierungsgrad: Eindeutig</lido:descriptiveNoteValue>
-         </lido:objectDescriptionSet>
-         <lido:objectDescriptionSet>
-            <lido:descriptiveNoteValue xml:lang="de">Provenienzbewertung: Unbedenklich</lido:descriptiveNoteValue>
-         </lido:objectDescriptionSet>
-         <lido:objectDescriptionSet>
-            <lido:descriptiveNoteValue xml:lang="de">Provenienzbewertung Begründung: Aufgrund der Herkunft (archäologische Grabung) wurde die Provenienz als unbedenklich eingestuft. Nachdem die Grabungen im Bereich des ehemaligen NS-Zwangsarbeiterlagers Graz-Liebenau stattfanden, liegt jedoch hinsichtlich der (den) Objektbiographie(n) ein historischer Unrechtskontext vor.</lido:descriptiveNoteValue>
-         </lido:objectDescriptionSet>
-         <lido:objectDescriptionSet>
-            <lido:descriptiveNoteValue xml:lang="de">Bez., Signaturen, Punzen, Marken: Stück 2: "COLN"; "PATENT(/C)"</lido:descriptiveNoteValue>
-         </lido:objectDescriptionSet>
-         <lido:objectDescriptionSet>
-            <lido:descriptiveNoteValue xml:lang="de">Objektzustand Allgemein: gut</lido:descriptiveNoteValue>
-         </lido:objectDescriptionSet>
-         <lido:objectDescriptionSet>
-            <lido:descriptiveNoteValue xml:lang="de">Schäden: Bruch</lido:descriptiveNoteValue>
-         </lido:objectDescriptionSet>
-      </lido:objectDescriptionWrap>
-      <lido:eventWrap>
-         <lido:eventSet>
-            <lido:event>
-               <lido:eventType>http://terminology.lido-schema.org/lido00007</lido:eventType>
-               <lido:eventDate>
-                  <lido:displayDate>19. Jahrhundert</lido:displayDate>
-               </lido:eventDate>
-            </lido:event>
-         </lido:eventSet>
-         <lido:eventSet>
-            <lido:event>
-               <lido:eventType>http://terminology.lido-schema.org/lido01184</lido:eventType>
-               <lido:eventDesriptionSet>
-                  <lido:descriptiveNoteValue xml:lang="de">Eingangsart: Schenkung</lido:descriptiveNoteValue>
-                  <lido:descriptiveNoteValue xml:lang="de">Voreigentümer*in Name: Energie Steiermark Green Power GmbH</lido:descriptiveNoteValue>
-                  <lido:descriptiveNoteValue xml:lang="de">Voreigentümer*in Ort: Leonhardgürtel 10, 8010 Graz</lido:descriptiveNoteValue>
-                  <lido:descriptiveNoteValue xml:lang="de">Voreigentümer*in Rolle: Auftraggeber</lido:descriptiveNoteValue>
-                  <lido:descriptiveNoteValue xml:lang="de">Eingangsdatum: 10.06.2021</lido:descriptiveNoteValue>
-                  <lido:descriptiveNoteValue xml:lang="de">Status: inventarisiert</lido:descriptiveNoteValue>
-               </lido:eventDesriptionSet>
-            </lido:event>
-         </lido:eventSet>
-         <lido:eventSet>
-            <lido:event>
-               <lido:eventType>http://terminology.lido-schema.org/lido00225</lido:eventType>
-               <lido:eventPlace>
-                  <lido:displayPlace>Gemeinde: Graz | Katastralgemeinde: Jakomini | Grundstücksnummer: 2156/2</lido:displayPlace>
-               </lido:eventPlace>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>Nummernhistorie: Fnd. Nr.: 42</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>Stück: 2</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>Registrierdatum: 06.07.2022</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>Maßnahmennummer: 63113.17.01</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>Maßnahmenbezeichnung: Heimgartenanlage</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>Grabungsobjektnummer: 12</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>Grabungsobjektbezeichnung: Bombentrichter</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>SE-Nummer: 36</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-               <lido:eventDescriptionSet>
-                  <lido:descriptiveNoteValue>SE-Bezeichnung: Bombentrichter-Verfüllung</lido:descriptiveNoteValue>
-               </lido:eventDescriptionSet>
-            </lido:event>
-         </lido:eventSet>
-      </lido:eventWrap>
-   </lido:descriptiveMetadata>
-   <lido:administrativeMetadata xml:lang="de">
-      <lido:recordWrap>
-         <lido:recordID lido:type="http://terminology.lido-schema.org/lido00100">e00d0c75-f187-4a48-bcd6-accde6d2c7a4</lido:recordID>
-         <lido:recordType>
-            <lido:term>single object</lido:term>
-         </lido:recordType>
-         <lido:recordSource>
-            <lido:legalBodyName>
-               <lido:appellationValue>Stadtmuseum Graz GmbH</lido:appellationValue>
-            </lido:legalBodyName>
-            <lido:legalBodyWeblink>https://www.grazmuseum.at/</lido:legalBodyWeblink>
-         </lido:recordSource>
-      </lido:recordWrap>
-   </lido:administrativeMetadata>
-</lido:lido>
+            </lido:objectDescriptionSet>
+            <lido:objectDescriptionSet xmlns:lido="http://lido-schema.org">
+               <lido:descriptiveNoteValue xml:lang="de">Identifizierungsgrad: Eindeutig</lido:descriptiveNoteValue>
+            </lido:objectDescriptionSet>
+            <lido:objectDescriptionSet xmlns:lido="http://lido-schema.org">
+               <lido:descriptiveNoteValue xml:lang="de">Provenienzbewertung: Unbedenklich</lido:descriptiveNoteValue>
+            </lido:objectDescriptionSet>
+            <lido:objectDescriptionSet xmlns:lido="http://lido-schema.org">
+               <lido:descriptiveNoteValue xml:lang="de">Provenienzbewertung Begründung: Aufgrund der Herkunft (archäologische Grabung) wurde die Provenienz als unbedenklich eingestuft. Nachdem die Grabungen im Bereich des ehemaligen NS-Zwangsarbeiterlagers Graz-Liebenau stattfanden, liegt jedoch hinsichtlich der (den) Objektbiographie(n) ein historischer Unrechtskontext vor.</lido:descriptiveNoteValue>
+            </lido:objectDescriptionSet>
+            <lido:objectDescriptionSet xmlns:lido="http://lido-schema.org">
+               <lido:descriptiveNoteValue xml:lang="de">Bez., Signaturen, Punzen, Marken: Stück 2: "COLN"; "PATENT(/C)"</lido:descriptiveNoteValue>
+            </lido:objectDescriptionSet>
+            <lido:objectDescriptionSet xmlns:lido="http://lido-schema.org">
+               <lido:descriptiveNoteValue xml:lang="de">Objektzustand Allgemein: gut</lido:descriptiveNoteValue>
+            </lido:objectDescriptionSet>
+            <lido:objectDescriptionSet xmlns:lido="http://lido-schema.org">
+               <lido:descriptiveNoteValue xml:lang="de">Schäden: Bruch</lido:descriptiveNoteValue>
+            </lido:objectDescriptionSet>
+         </lido:objectDescriptionWrap>
+         <lido:eventWrap>
+            <lido:eventSet>
+               <lido:event>
+                  <lido:eventType>http://terminology.lido-schema.org/lido00007</lido:eventType>
+                  <lido:eventDate>
+                     <lido:displayDate>19. Jahrhundert</lido:displayDate>
+                  </lido:eventDate>
+               </lido:event>
+            </lido:eventSet>
+            <lido:eventSet>
+               <lido:event>
+                  <lido:eventType>http://terminology.lido-schema.org/lido01184</lido:eventType>
+                  <lido:eventDesriptionSet>
+                     <lido:descriptiveNoteValue xmlns:lido="http://lido-schema.org" xml:lang="de">Eingangsart: Schenkung</lido:descriptiveNoteValue>
+                     <lido:descriptiveNoteValue xmlns:lido="http://lido-schema.org" xml:lang="de">Voreigentümer*in Name: Energie Steiermark Green Power GmbH</lido:descriptiveNoteValue>
+                     <lido:descriptiveNoteValue xmlns:lido="http://lido-schema.org" xml:lang="de">Voreigentümer*in Ort: Leonhardgürtel 10, 8010 Graz</lido:descriptiveNoteValue>
+                     <lido:descriptiveNoteValue xmlns:lido="http://lido-schema.org" xml:lang="de">Voreigentümer*in Rolle: Auftraggeber</lido:descriptiveNoteValue>
+                     <lido:descriptiveNoteValue xmlns:lido="http://lido-schema.org" xml:lang="de">Eingangsdatum: 10.06.2021</lido:descriptiveNoteValue>
+                     <lido:descriptiveNoteValue xmlns:lido="http://lido-schema.org" xml:lang="de">Status: inventarisiert</lido:descriptiveNoteValue>
+                  </lido:eventDesriptionSet>
+               </lido:event>
+            </lido:eventSet>
+            <lido:eventSet xmlns:lido="http://lido-schema.org">
+               <lido:event>
+                  <lido:eventType>http://terminology.lido-schema.org/lido00225</lido:eventType>
+                  <lido:eventPlace>
+                     <lido:displayPlace>Gemeinde: Graz | Katastralgemeinde: Jakomini | Grundstücksnummer: 2156/2</lido:displayPlace>
+                  </lido:eventPlace>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>Nummernhistorie: Fnd. Nr.: 42</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>Stück: 2</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>Registrierdatum: 06.07.2022</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>Maßnahmennummer: 63113.17.01</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>Maßnahmenbezeichnung: Heimgartenanlage</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>Grabungsobjektnummer: 12</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>Grabungsobjektbezeichnung: Bombentrichter</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>SE-Nummer: 36</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+                  <lido:eventDescriptionSet>
+                     <lido:descriptiveNoteValue>SE-Bezeichnung: Bombentrichter-Verfüllung</lido:descriptiveNoteValue>
+                  </lido:eventDescriptionSet>
+               </lido:event>
+            </lido:eventSet>
+         </lido:eventWrap>
+      </lido:descriptiveMetadata>
+      <lido:administrativeMetadata xml:lang="de">
+         <lido:recordWrap>
+            <lido:recordID lido:type="http://terminology.lido-schema.org/lido00100">e00d0c75-f187-4a48-bcd6-accde6d2c7a4</lido:recordID>
+            <lido:recordType>
+               <lido:term>single object</lido:term>
+            </lido:recordType>
+            <lido:recordSource>
+               <lido:legalBodyName>
+                  <lido:appellationValue>Stadtmuseum Graz GmbH</lido:appellationValue>
+               </lido:legalBodyName>
+               <lido:legalBodyWeblink>https://www.grazmuseum.at/</lido:legalBodyWeblink>
+            </lido:recordSource>
+         </lido:recordWrap>
+      </lido:administrativeMetadata>
+   </lido:lido>
+</lido:lidoWrap>

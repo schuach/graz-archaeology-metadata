@@ -11,102 +11,104 @@
 
   <xsl:output indent="yes" />
   <xsl:template match="/mbox:root/mbox:archive/mbox:item">
-    <lido:lido>
-      <lido:lidoRecID lido:type="http://terminology.lido-schema.org/lido00100" lido:source="GrazMuseum">{@id}</lido:lidoRecID>
-      <lido:category>
-        <skos:Concept rdf:about="http://terminology.lido-schema.org/lido00096">
-          <skos:prefLabel xml:lang="en">Human-made object</skos:prefLabel>
-        </skos:Concept>
-      </lido:category>
-      <lido:descriptiveMetadata xml:lang="de">
-        <lido:objectClassificationWrap>
-          <lido:objectWorkTypeWrap>
-            <xsl:for-each select="mbox:field[@name='Schlagworte'] => tokenize('; *')">
-              <lido:objectWorkType>{.}</lido:objectWorkType>
-            </xsl:for-each>
-          </lido:objectWorkTypeWrap>
-        </lido:objectClassificationWrap>
-        <lido:objectIdentificationWrap>
-          <lido:titleWrap>
-            <lido:titleSet>
-              <lido:appellationValue>{
+    <lido:lidoWrap xmlns:lido="http://www.lido-schema.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lido-schema.org http://www.lido-schema.org/schema/v1.0/lido-v1.0.xsd">
+      <lido:lido>
+        <lido:lidoRecID lido:type="http://terminology.lido-schema.org/lido00100" lido:source="GrazMuseum">{@id}</lido:lidoRecID>
+        <lido:category>
+          <skos:Concept rdf:about="http://terminology.lido-schema.org/lido00096">
+            <skos:prefLabel xml:lang="en">Human-made object</skos:prefLabel>
+          </skos:Concept>
+        </lido:category>
+        <lido:descriptiveMetadata xml:lang="de">
+          <lido:objectClassificationWrap>
+            <lido:objectWorkTypeWrap>
+              <xsl:for-each select="mbox:field[@name='Schlagworte'] => tokenize('; *')">
+                <lido:objectWorkType>{.}</lido:objectWorkType>
+              </xsl:for-each>
+            </lido:objectWorkTypeWrap>
+          </lido:objectClassificationWrap>
+          <lido:objectIdentificationWrap>
+            <lido:titleWrap>
+              <lido:titleSet>
+                <lido:appellationValue>{
                 mbox:field[@name="Titel"]/mbox:text
               }</lido:appellationValue>
-            </lido:titleSet>
-          </lido:titleWrap>
-          <lido:objectMeasurementsWrap>
-            <lido:objectMeasurementsSet>
-              <lido:displayObjectMeasurements xml:lang="de">{
+              </lido:titleSet>
+            </lido:titleWrap>
+            <lido:objectMeasurementsWrap>
+              <lido:objectMeasurementsSet>
+                <lido:displayObjectMeasurements xml:lang="de">{
                   mbox:field[@name="Maße"]/mbox:text
                 }</lido:displayObjectMeasurements>
-            </lido:objectMeasurementsSet>
-          </lido:objectMeasurementsWrap>
-          <lido:objectMaterialsTechWrap>
-            <lido:objectMaterialsTechSet>
-              <lido:displayMaterialsTech>{
+              </lido:objectMeasurementsSet>
+            </lido:objectMeasurementsWrap>
+            <lido:objectMaterialsTechWrap>
+              <lido:objectMaterialsTechSet>
+                <lido:displayMaterialsTech>{
                 mbox:field[@name="Material"]/mbox:text}, {mbox:field[@name="Technik"]/mbox:text
               }</lido:displayMaterialsTech>
-              <lido:materialsTech>
-                <!-- Medium -->
-                <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00513">
-                  <lido:term xml:lang="de">{mbox:field[@name="Material"]/mbox:text}</lido:term>
-                </lido:termMaterialsTech>
-                <!-- Technique -->
-                <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00131">
-                  <lido:term xml:lang="de">{mbox:field[@name="Technik"]/mbox:text}</lido:term>
-                </lido:termMaterialsTech>
-              </lido:materialsTech>
-            </lido:objectMaterialsTechSet>
-          </lido:objectMaterialsTechWrap>
-          <lido:repositoryWrap>
-            <xsl:call-template name="makeRepositorySet" />
-          </lido:repositoryWrap>
-        </lido:objectIdentificationWrap>
-        <lido:objectDescriptionWrap>
-          <xsl:call-template name="makeDescriptionSet" />
-        </lido:objectDescriptionWrap>
-        <lido:eventWrap>
-          <!-- creation event -->
-          <lido:eventSet>
-            <lido:event>
-              <lido:eventType>http://terminology.lido-schema.org/lido00007</lido:eventType>
-              <lido:eventDate>
-                <lido:displayDate>{
+                <lido:materialsTech>
+                  <!-- Medium -->
+                  <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00513">
+                    <lido:term xml:lang="de">{mbox:field[@name="Material"]/mbox:text}</lido:term>
+                  </lido:termMaterialsTech>
+                  <!-- Technique -->
+                  <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/lido00131">
+                    <lido:term xml:lang="de">{mbox:field[@name="Technik"]/mbox:text}</lido:term>
+                  </lido:termMaterialsTech>
+                </lido:materialsTech>
+              </lido:objectMaterialsTechSet>
+            </lido:objectMaterialsTechWrap>
+            <lido:repositoryWrap>
+              <xsl:call-template name="makeRepositorySet" />
+            </lido:repositoryWrap>
+          </lido:objectIdentificationWrap>
+          <lido:objectDescriptionWrap>
+            <xsl:call-template name="makeDescriptionSet" />
+          </lido:objectDescriptionWrap>
+          <lido:eventWrap>
+            <!-- creation event -->
+            <lido:eventSet>
+              <lido:event>
+                <lido:eventType>http://terminology.lido-schema.org/lido00007</lido:eventType>
+                <lido:eventDate>
+                  <lido:displayDate>{
                   mbox:field[@name="Datierung"]/mbox:text
                 }</lido:displayDate>
-              </lido:eventDate>
-            </lido:event>
-          </lido:eventSet>
-          <!-- aquisition -->
-          <lido:eventSet>
-            <lido:event>
-              <!-- Change of physical control and legal title (en) -->
-              <lido:eventType>http://terminology.lido-schema.org/lido01184</lido:eventType>
-              <lido:eventDesriptionSet>
+                </lido:eventDate>
+              </lido:event>
+            </lido:eventSet>
+            <!-- aquisition -->
+            <lido:eventSet>
+              <lido:event>
+                <!-- Change of physical control and legal title (en) -->
+                <lido:eventType>http://terminology.lido-schema.org/lido01184</lido:eventType>
+                <lido:eventDesriptionSet>
                   <xsl:call-template name="makeAcqNote" />
-              </lido:eventDesriptionSet>
-            </lido:event>
-          </lido:eventSet>
-          <!-- excavation event -->
-          <xsl:call-template name="makeExcavationEvent" />
-        </lido:eventWrap>
-      </lido:descriptiveMetadata>
-      <lido:administrativeMetadata xml:lang="de">
-        <lido:recordWrap>
-          <lido:recordID lido:type="http://terminology.lido-schema.org/lido00100">{@id}</lido:recordID>
-          <lido:recordType>
-            <lido:term>single object</lido:term>
-          </lido:recordType>
-          <lido:recordSource>
-            <!-- <lido:legalBodyID lido:type="URI" lido:source="ISIL (ISO 15511)">info:isil/DE-Mb112</lido:legalBodyID> -->
-            <lido:legalBodyName>
-              <lido:appellationValue>{mbox:field[@name="Institution"]/mbox:text}</lido:appellationValue>
-            </lido:legalBodyName>
-            <lido:legalBodyWeblink>https://www.grazmuseum.at/</lido:legalBodyWeblink>
-          </lido:recordSource>
-        </lido:recordWrap>
-      </lido:administrativeMetadata>
-    </lido:lido>
+                </lido:eventDesriptionSet>
+              </lido:event>
+            </lido:eventSet>
+            <!-- excavation event -->
+            <xsl:call-template name="makeExcavationEvent" />
+          </lido:eventWrap>
+        </lido:descriptiveMetadata>
+        <lido:administrativeMetadata xml:lang="de">
+          <lido:recordWrap>
+            <lido:recordID lido:type="http://terminology.lido-schema.org/lido00100">{@id}</lido:recordID>
+            <lido:recordType>
+              <lido:term>single object</lido:term>
+            </lido:recordType>
+            <lido:recordSource>
+              <!-- <lido:legalBodyID lido:type="URI" lido:source="ISIL (ISO 15511)">info:isil/DE-Mb112</lido:legalBodyID> -->
+              <lido:legalBodyName>
+                <lido:appellationValue>{mbox:field[@name="Institution"]/mbox:text}</lido:appellationValue>
+              </lido:legalBodyName>
+              <lido:legalBodyWeblink>https://www.grazmuseum.at/</lido:legalBodyWeblink>
+            </lido:recordSource>
+          </lido:recordWrap>
+        </lido:administrativeMetadata>
+      </lido:lido>
+    </lido:lidoWrap>
   </xsl:template>
 
 
@@ -168,7 +170,7 @@
                        'Schäden',
                        'Provenienzbewertung',
                        'Provenienzbewertung Begründung'
-                       )]" >
+                       )]">
       <xsl:if test="(mbox:text != '-') and (mbox:text != '')">
         <lido:objectDescriptionSet>
           <lido:descriptiveNoteValue xml:lang="de">{
